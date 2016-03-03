@@ -73,6 +73,15 @@ Assuming your package has been authorized to use our build system,
 subsequent pushes will now trigger builds, and the build reports
 will be posted to the issue you created in this repository.
 
+## Multiple Related Packages
+
+Sometimes you wish to contribute more than one package at a time. For
+example, you may contribute a software package and a data package that
+goes with it.
+
+*SUPPORT/DOCUMENTATION FOR THIS IS FORTHCOMING*
+
+
 ## Resources
 
 Our package build system will run `R CMD check` on your package,
