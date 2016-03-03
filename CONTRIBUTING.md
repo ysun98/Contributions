@@ -45,8 +45,7 @@ Here's what will happen when you do that:
 * If your package is accepted, it will be added to Bioconductor's
   source control repository.   
 
-
- ## Adding a Web Hook
+## Adding a Web Hook
 
 Go to your repository page on GitHub. The link to it will look
 something like this:
@@ -55,18 +54,18 @@ something like this:
 
 The username and repository name will be different, of course.
 
-Click on "Settings", which is currently located towards the top,
+Click on `Settings`, which is currently located towards the top,
 on the right-hand side of the page.
 
-In the left hand "Options" section, click on "Webhooks & Services".
+In the left hand `Options` section, click on `Webhooks & Services`.
 
-Click on "Add webhook".
+Click on `Add webhook`.
 
 Paste the following URL into the `Payload URL` box:
 
     http://issues.bioconductor.org
 
-You can leave the other settings alone and click 'Add Webhook'
+You can leave the other settings alone and click `Add Webhook`.
 
 Assuming your package has been authorized to use our build system,
 subsequent pushes will now trigger builds, and the build reports
