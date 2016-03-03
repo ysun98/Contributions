@@ -57,7 +57,7 @@ The username and repository name will be different, of course.
 Click on `Settings`, which is currently located towards the top,
 on the right-hand side of the page.
 
-In the left hand `Options` section, click on `Webhooks & Services`.
+In the left hand `Options` section, click on `Webhooks & services`.
 
 Click on `Add webhook`.
 
@@ -65,7 +65,7 @@ Paste the following URL into the `Payload URL` box:
 
     http://issues.bioconductor.org
 
-You can leave the other settings alone and click `Add Webhook`.
+You can leave the other settings alone and click `Add webhook`.
 
 Assuming your package has been authorized to use our build system,
 subsequent pushes will now trigger builds, and the build reports
@@ -86,3 +86,7 @@ The following pages contain more information about package submission.
 * [Package Submission](https://bioconductor.org/developers/package-submission/)
 * The above and many other developer resources are available
   at the [developers' page](https://bioconductor.org/developers/).
+
+If you have a question not answered above, please post it to
+the [bioc-devel](https://stat.ethz.ch/mailman/listinfo/bioc-devel)
+mailing list.
