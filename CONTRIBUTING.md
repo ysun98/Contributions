@@ -14,7 +14,7 @@ By using this service, you acknowledge that:
 
 The way to contribute a
 [Bioconductor](https://bioconductor.org/) package is to
-file a [new issue](issues/new) in this GitHub repository,
+file a [new issue](../../issues/new) in this GitHub repository,
 including the link to a
 [GitHub repository](https://help.github.com/articles/create-a-repo/)
 you've set up that contains your package.
