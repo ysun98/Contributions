@@ -28,7 +28,7 @@ Here's what will happen when you do that:
   it is only for Bioconductor package contributors.
 * Once the package has been moderated, it will be built
   on our build system, on three platforms (Linux, Mac OS X,
-  and Windows). A build report will be appended to the
+  and Windows). A link to a build report will be appended to the
   issue that you've created in this repository.
 * **IMPORTANT**: For subsequent changes to your package
   to be picked up, you must [add a webhook](#adding-a-web-hook)
