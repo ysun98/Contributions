@@ -44,6 +44,8 @@ Here's what will happen when you do that:
   may comment on your package.
 * If your package is accepted, it will be added to Bioconductor's
   source control repository.   
+* Once the review process is complete, the issue you created
+  will be closed.
 
 ## Adding a Web Hook
 
