@@ -73,6 +73,13 @@ Assuming your package has been authorized to use our build system,
 subsequent pushes will now trigger builds, and the build reports
 will be posted to the issue you created in this repository.
 
+Note that pushes to non-default branches (`master` is usually
+the default branches, unless you have set it to be something
+different) are ignored.
+
+If you do not want a build to occur on each push, temporarily remove the
+webhook until you are ready to reactivate the automated builds.
+
 ## Multiple Related Packages
 
 Sometimes you wish to contribute more than one package at a time. For
