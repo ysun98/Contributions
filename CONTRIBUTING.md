@@ -78,7 +78,7 @@ subsequent pushes will now trigger builds, and the build reports
 will be posted to the issue you created in this repository.
 
 Note that pushes to non-default branches (`master` is usually
-the default branches, unless you have set it to be something
+the default branch, unless you have set it to be something
 different) are ignored.
 
 If you do not want a build to occur on each push, temporarily remove the
