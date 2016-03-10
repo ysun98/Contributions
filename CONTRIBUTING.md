@@ -108,6 +108,12 @@ You can only have one `AdditionalPackage` line per comment.
 Wait until this related package builds before submitting further
 related packages.
 
+The `AdditionalPackages` comment must be posted by the same
+GitHub user who created the issue. Also, the initial
+package submitted in the issue must have completed the
+'moderation'  step. If these conditions are not met, the
+additional package will not build.
+
 **IMPORTANT**: You need to [add a webhook](#adding-a-web-hook)
 for these additional related packages as well, if you want
 pushes to them to trigger new builds.
