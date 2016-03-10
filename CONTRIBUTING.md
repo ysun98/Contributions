@@ -104,6 +104,9 @@ You can only have one `AdditionalPackage` line per comment.
 Wait until this related package builds before submitting further
 related packages.
 
+**IMPORTANT**: You need to [add a webhook](#adding-a-web-hook)
+for these additional related packages as well, if you want
+pushes to them to trigger new builds.
 
 ## Resources
 
