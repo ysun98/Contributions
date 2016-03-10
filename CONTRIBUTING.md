@@ -79,7 +79,23 @@ Sometimes you wish to contribute more than one package at a time. For
 example, you may contribute a software package and a data package that
 goes with it.
 
-*SUPPORT/DOCUMENTATION FOR THIS IS FORTHCOMING*
+All of these packages should go under the same GitHub issue. However,
+you can only submit one GitHub repository URL at once to an issue.
+
+If you are submitting multiple related packages, the first one you
+submit should be one that can be installed without a dependency on
+any of the other packages you are submitting as a group.
+
+Wait until it builds, and then you can submit additional related packages
+to the same issue, by posting a comment containing a line like:
+
+    AdditionalPackage: https://github.com/username/repositoryname
+
+Of course, you need to change `username` and `repositoryname` to
+match your repository.
+You can only have one `AdditionalPackage` line per comment.
+Wait until this related package builds before submitting further
+related packages.
 
 
 ## Resources
