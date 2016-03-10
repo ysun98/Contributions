@@ -9,6 +9,10 @@ By using this service, you acknowledge that:
 * The build reports and comments during the package review
   process are public.
 * Any GitHub user may add comments to the package review.
+* You are submitting a package for inclusion in
+  [Bioconductor](https://bioconductor.org); the build
+  service we provide is meant only for Bioconductor package
+  submitters.
 
 ## How it Works
 
