@@ -1,14 +1,25 @@
 
-# Contribute a _Bioconductor_ Package
+# Table of Contents
+
+- [Contributing a _Bioconductor_ Package](#contribute-a-bioconductor-package)
+- [Starting the Submission Process](#starting-the-submission-process)
+- [What to Expect](#what-to-expect)
+- [Adding a Web Hook](#adding-a-web-hook)
+- [Submitting Related Packages](#submitting-related-packages)
+- [Resources](#resources)
+
+# Contributing a _Bioconductor_ Package
 
 This repository is used to contribute new packages to the
 [Bioconductor][1] project for the analysis and comprehension of
 high-throughput genomic data. Please
 
-- Review the [package submission][7] process.
+    - Review the [package submission][7] process.
+
 - Ensure that your package conforms to our [package guidelines][6].
-- Address any questions about new package submission to the
-  [bioc-devel][9] mailing list.
+
+- Ask questions about new package submission on the [bioc-devel][9]
+  mailing list.
 
 By using this service, please note that:
 
@@ -23,39 +34,41 @@ By using this service, please note that:
   build service we provide is meant only for individuals submitting
   _Bioconductor_ packages.
 
-## How it Works
+## Starting the Submission Process
 
-To contribute a _Bioconductor_ package
+To submit a package to _Bioconductor_:
 
 1. Create your own [GitHub repository][2], containing source code
    structured as an _R_ package.
 
 2. [Open a new issue][5]. Complete the issue by adding the link to
    your repository, and confirming that you understand the review
-   process, package guidelines, and maintainer responsibilities.
+   process, package guidelines, and maintainer
+   responsibilities. Provide the name of your package as the 'Title'
+   of the issue.
 
 3. [Add a webhook][3] to your repository. The webhook means that any
    commit to the default (typically 'master') branch automatically
    triggers a new package build.
 
-Here's what will happen:
+## What to Expect
 
 * A _Bioconductor_ team member will take a very brief look at your
   package, to ensure that it is intended for _Bioconductor_.
 
 * The package will be submitted to the _Bioconductor_ build
-  system. The system will build and check your package, using the
-  'devel' version of _Bioconductor_, on three platforms (Linux, Mac OS
-  X, and Windows). The system will check out your package from
-  GitHub. It will then run `R CMD build` to create a 'tarball' of your
-  source code, vignettes, and man pages. It will run `R CMD check` on
-  the tarball, to ensure that the package conforms to standard _R_
-  programming best practices. Finally, the build system will run `R
-  CMD BiocCheck` to ensure that the package conforms to _Bioconductor_
-  [BiocCheck][4] standards. After these steps are complete, a link to
-  a build report will be appended to the new package issue. Avoid
-  surprises by running these checks on your package, under the 'devel'
-  version of _Bioconductor_, before submitting your package.
+  system. The system will check out your package from GitHub. It will
+  then run `R CMD build` to create a 'tarball' of your source code,
+  vignettes, and man pages. It will run `R CMD check` on the tarball,
+  to ensure that the package conforms to standard _R_ programming best
+  practices. Finally, the build system will run `R CMD BiocCheck` to
+  ensure that the package conforms to _Bioconductor_ [BiocCheck][4]
+  standards. The system will perform these steps using the 'devel'
+  version of _Bioconductor_, on three platforms (Linux, Mac OS X, and
+  Windows).  After these steps are complete, a link to a build report
+  will be appended to the new package issue. Avoid surprises by
+  running these checks on your package, under the 'devel' version of
+  _Bioconductor_, before submitting your package.
 
 * If the build report indicates problems, modify your package and
   commit changes to the default branch of your GitHub
@@ -125,7 +138,7 @@ to non-default branches are ignored.
 If you do not want a build to occur on each push, temporarily remove the
 webhook until you are ready to reactivate the automated builds.
 
-## Multiple Related Packages
+## Submitting Related Packages
 
 Sometimes it is appropriate to contribute more than one package at a
 time. The most common case is when a software package has a companion
@@ -166,7 +179,7 @@ The following pages contain more information about package submission.
 * The above and many other developer resources are available at the
   [developers' page][8].
 
-If you have a question not answered above, please post it to the
+If you have a question not answered above, please ask on the
 [bioc-devel][9] mailing list.
 
 [1]: https://bioconductor.org
