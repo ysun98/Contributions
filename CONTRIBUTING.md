@@ -1,7 +1,7 @@
 
 # Table of Contents
 
-- [Contributing a _Bioconductor_ Package](#contribute-a-bioconductor-package)
+- [Contributing a _Bioconductor_ Package](#contributing-a-bioconductor-package)
 - [Starting the Submission Process](#starting-the-submission-process)
 - [What to Expect](#what-to-expect)
 - [Adding a Web Hook](#adding-a-web-hook)
