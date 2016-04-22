@@ -27,9 +27,9 @@ Please confirm the following by editing each check box to '[x]'
 
     - [ ] The 'devel' branch for new packages and features.
     - [ ] The stable 'release' branch, made available every six
-      months, for bug fixes
+      months, for bug fixes.
     - [ ] _Bioconductor_ version control using [Subversion][5]
-      (optionally [via GitHub][6])
+      (optionally [via GitHub][6]).
 
 If you require clarification on any of the above points, please
 subscribe and post to the [bioc-devel][4] mailing list.
