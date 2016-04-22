@@ -1,10 +1,42 @@
-Please enter the URL of the GitHub repository containing your R package:
+Please update the following URL to point to the GitHub repository of
+the package you wish to submit to _Bioconductor_
 
+- Repository: https://github.com/yourusername/yourpackagename
 
+Please confirm the following by editing each check box to '[x]'
 
-Please describe what your package does (in 50 words or less):
+- [ ] I understand that by submitting my package to _Bioconductor_,
+  the package source and all review commentary are visible to the
+  general public.
 
+- [ ] I have read the _Bioconductor_ [Package Guidelines][1] and
+  [Package Submission][2] instructions.
 
+- [ ] My package addresses statistical or bioinformatic issues related
+  to the analysis and comprehension of high throughput genomic data.
 
+- [ ] I am committed to the long-term maintenance of my package. This
+  includes monitoring the [support site][3] for issues that users may
+  have, subscribing to the [bioc-devel][4] mailing list to stay aware
+  of developments in the _Bioconductor_ community, responding promptly
+  to requests for updates from the Core team in response to changes in
+  _R_ or underlying software.
 
+- I am familiar with the essential aspects of _Bioconductor_ software
+  management, including:
 
+    - [ ] The 'devel' branch for new packages and features.
+    - [ ] The stable 'release' branch, made available every six
+      months, for bug fixes
+    - [ ] _Bioconductor_ version control using [Subversion][5]
+      (optionally [via GitHub][6])
+
+If you require clarification on any of the above points, please
+subscribe and post to the [bioc-devel][4] mailing list.
+
+[1]: https://bioconductor.org/developers/package-guidelines/
+[2]: https://bioconductor.org/developers/package-submission/
+[3]: https://support.bioconductor.org
+[4]: https://stat.ethz.ch/mailman/listinfo/bioc-devel
+[5]: http://bioconductor.org/developers/how-to/source-control/
+[6]: http://bioconductor.org/developers/how-to/git-mirrors/
