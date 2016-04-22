@@ -9,8 +9,9 @@ Please confirm the following by editing each check box to '[x]'
   the package source and all review commentary are visible to the
   general public.
 
-- [ ] I have read the _Bioconductor_ [Package Guidelines][1] and
-  [Package Submission][2] instructions.
+- [ ] I have read the _Bioconductor_ [Package Submission][2]
+  instructions. My package is consistent with the _Bioconductor_
+  [Package Guidelines][1].
 
 - [ ] My package addresses statistical or bioinformatic issues related
   to the analysis and comprehension of high throughput genomic data.
