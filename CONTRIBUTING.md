@@ -130,9 +130,8 @@ checks on your package before submitting them to us.
 
 The following pages contain more information about package submission.
 
-* [Building Packages For Bioconductor][5]
-* [Package Guidelines][6]
-* [Package Submission][7]
+* [Package Guidelines][6].
+* [Package Submission][7].
 * The above and many other developer resources are available at the
   [developers' page][8].
 
@@ -143,7 +142,6 @@ If you have a question not answered above, please post it to the
 [2]: https://help.github.com/articles/create-a-repo/
 [3]: #adding-a-web-hook
 [4]: https://bioconductor.org/packages/devel/bioc/html/BiocCheck.html
-[5]: https://bioconductor.org/packages/devel/bioc/html/BiocCheck.html
 [6]: https://bioconductor.org/developers/package-guidelines/
 [7]: https://bioconductor.org/developers/package-submission/
 [8]: https://bioconductor.org/developers/
