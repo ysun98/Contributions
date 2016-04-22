@@ -12,7 +12,7 @@ By using this service, please note that:
 
 ## How it Works
 
-To contribute a [Bioconductor][1] package
+To contribute a _Bioconductor_ package
 
 1. Open a [new issue](../../issues/new) in this GitHub repository. The
    new issue requires a link to an existing [GitHub repository][2]
