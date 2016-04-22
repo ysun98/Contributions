@@ -132,30 +132,30 @@ time. The most common case is when a software package has a companion
 experiment data package used for illustrative purposes in the
 vignette. Remember to avoid circular dependencies between pacakges.
 
-* Start by submitting the package that can be installed without a
-  dependency on any of the other packages you are submitting (this is
-  usually the experiment data package). Do this by creating a
-  [new issue][5] as described in step 2, above.
+1. Start by submitting the package that can be installed without a
+   dependency on any of the other packages you are submitting (this is
+   usually the experiment data package). Do this by creating a
+   [new issue][5] as described above.
 
-* Continue working with this package until it builds and checks
-  without error on any platform.
+2. Continue working with this package until it builds and checks
+   without error on any platform.
 
-* Submit additional packages to the same issue. Do this by posting a
-  comment containing a line like:
+3. Submit additional packages to the same issue. Do this by posting a
+   comment containing a line like:
 
         AdditionalPackage: https://github.com/username/repositoryname
 
-  Include only one `AdditionalPackage` line per comment.  Wait until
-  this related package builds before submitting further related
-  packages.
+   Include only one `AdditionalPackage` line per comment.  Wait until
+   this related package builds before submitting further related
+   packages.
 
-* The `AdditionalPackage` comment must be posted by the same GitHub
-  user who created the issue. Also, the initial package submitted in
-  the issue must have completed the 'moderation' step. If these
-  conditions are not met, the additional package will not build.
+4. The `AdditionalPackage` comment must be posted by the same GitHub
+   user who created the issue. Also, the initial package submitted in
+   the issue must have completed the 'moderation' step. If these
+   conditions are not met, the additional package will not build.
 
-* [Add a webhook][3] for each additional package, so that any changes
-  trigger a new build.
+5. [Add a webhook][3] for each additional package, so that any changes
+   trigger a new build.
 
 ## Resources
 
