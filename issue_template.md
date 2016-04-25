@@ -1,9 +1,9 @@
-Please update the following URL to point to the GitHub repository of
+Update the following URL to point to the GitHub repository of
 the package you wish to submit to _Bioconductor_
 
 - Repository: https://github.com/yourusername/yourpackagename
 
-Please confirm the following by editing each check box to '[x]'
+Confirm the following by editing each check box to '[x]'
 
 - [ ] I understand that by submitting my package to _Bioconductor_,
   the package source and all review commentary are visible to the
@@ -23,17 +23,17 @@ Please confirm the following by editing each check box to '[x]'
   to requests for updates from the Core team in response to changes in
   _R_ or underlying software.
 
-- I am familiar with the essential aspects of _Bioconductor_ software
-  management, including:
+I am familiar with the essential aspects of _Bioconductor_ software
+management, including:
 
-    - [ ] The 'devel' branch for new packages and features.
-    - [ ] The stable 'release' branch, made available every six
+- [ ] The 'devel' branch for new packages and features.
+- [ ] The stable 'release' branch, made available every six
       months, for bug fixes.
-    - [ ] _Bioconductor_ version control using [Subversion][5]
-      (optionally [via GitHub][6]).
+- [ ] _Bioconductor_ version control using [Subversion][5]
+  (optionally [via GitHub][6]).
 
-If you require clarification on any of the above points, please
-subscribe and post to the [bioc-devel][4] mailing list.
+For help with submitting your package, please subscribe and post questions
+to the [bioc-devel][4] mailing list.
 
 [1]: https://bioconductor.org/developers/package-guidelines/
 [2]: https://bioconductor.org/developers/package-submission/

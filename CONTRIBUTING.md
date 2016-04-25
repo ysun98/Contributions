@@ -14,7 +14,7 @@ This repository is used to contribute new packages to the
 [Bioconductor][1] project for the analysis and comprehension of
 high-throughput genomic data. Please
 
-    - Review the [package submission][7] process.
+- Review the [package submission][7] process.
 
 - Ensure that your package conforms to our [package guidelines][6].
 
@@ -67,7 +67,7 @@ To submit a package to _Bioconductor_:
   version of _Bioconductor_, on three platforms (Linux, Mac OS X, and
   Windows).  After these steps are complete, a link to a build report
   will be appended to the new package issue. Avoid surprises by
-  running these checks on your package, under the 'devel' version of
+  running these checks on your own computer, under the 'devel' version of
   _Bioconductor_, before submitting your package.
 
 * If the build report indicates problems, modify your package and
