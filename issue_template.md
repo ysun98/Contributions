@@ -22,14 +22,14 @@ Please confirm the following by editing each check box to '[x]'
   to requests for updates from the Core team in response to changes in
   _R_ or underlying software.
 
-- I am familiar with the essential aspects of _Bioconductor_ software
-  management, including:
+I am familiar with the essential aspects of _Bioconductor_ software
+management, including:
 
-    - [ ] The 'devel' branch for new packages and features.
-    - [ ] The stable 'release' branch, made available every six
+- [ ] The 'devel' branch for new packages and features.
+- [ ] The stable 'release' branch, made available every six
       months, for bug fixes.
-    - [ ] _Bioconductor_ version control using [Subversion][5]
-      (optionally [via GitHub][6]).
+- [ ] _Bioconductor_ version control using [Subversion][5]
+  (optionally [via GitHub][6]).
 
 If you require clarification on any of the above points, please
 subscribe and post to the [bioc-devel][4] mailing list.
