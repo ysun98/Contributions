@@ -72,8 +72,9 @@ To submit a package to _Bioconductor_:
 
 * If the build report indicates problems, modify your package and
   commit changes to the default branch of your GitHub
-  repository. Committing to the default branch will trigger another
-  build report. If there are problems that you do not understand, seek
+  repository. Pushing to the default branch will trigger another
+  build report, **if** the pushed commits include a version bump.
+  If there are problems that you do not understand, seek
   help on the [bioc-devel][9] mailing list.
 
 * Once your package builds and checks without errors or (avoidable)
@@ -92,7 +93,8 @@ To submit a package to _Bioconductor_:
 
 * The reviewer will assess your responses, perhaps suggesting further
   modifications or clarification. The reviewer will then accept your
-  package for inclusion in _Bioconductor_, or decline it.
+  package for inclusion in _Bioconductor_, or decline it. Either way, the 
+  issue will be closed.
 
 * If your package is accepted, it will be added to _Bioconductor_'s
   Subversion source control repository and to the nightly 'devel'
@@ -168,7 +170,7 @@ vignette. Remember to avoid circular dependencies between pacakges.
    conditions are not met, the additional package will not build.
 
 5. [Add a webhook][3] for each additional package, so that any changes
-   trigger a new build.
+   (accompanied by a version bump) trigger a new build.
 
 ## Resources
 
