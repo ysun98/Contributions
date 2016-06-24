@@ -134,12 +134,10 @@ To add a web hook:
 6. Click `Add webhook`.
 
 Subsequent pushes to the default (usually `master`) branch of your
-repository will now trigger builds, and the build reports will be
+repository will now trigger builds (only if the package version
+has been bumped), and the build reports will be
 posted to the issue you created in this repository.  Note that pushes
 to non-default branches are ignored.
-
-If you do not want a build to occur on each push, temporarily remove the
-webhook until you are ready to reactivate the automated builds.
 
 ## Submitting Related Packages
 
