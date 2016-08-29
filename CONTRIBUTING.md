@@ -53,8 +53,10 @@ To submit a package to _Bioconductor_:
 
 ## What to Expect
 
-* A _Bioconductor_ team member will take a very brief look at your
-  package, to ensure that it is intended for _Bioconductor_.
+* A new package is iniitally lavelled as '1. awaiting moderation'.
+  A _Bioconductor_ team member will take a very brief look at your
+  package, to ensure that it is intended for _Bioconductor_. Appropriate
+  packages will be re-labelled '2. review in progress'.
 
 * The package will be submitted to the _Bioconductor_ build
   system. The system will check out your package from GitHub. It will
@@ -79,8 +81,8 @@ To submit a package to _Bioconductor_:
   help on the [bioc-devel][9] mailing list.
 
 * Once your package builds and checks without errors or (avoidable)
-  warnings, a _Bioconductor_ team member will be assigned as primary
-  reviewer of your package.  Other _Bioconductor_ developers and users
+  warnings, a _Bioconductor_ team member will provide a technical
+  review of your package.  Other _Bioconductor_ developers and users
   with domain expertise are encouraged to provide additional community
   commentary.  Reviewers will add comments to the issue you created.
 
@@ -94,8 +96,9 @@ To submit a package to _Bioconductor_:
 
 * The reviewer will assess your responses, perhaps suggesting further
   modifications or clarification. The reviewer will then accept your
-  package for inclusion in _Bioconductor_, or decline it. Either way, the 
-  issue will be closed.
+  package for inclusion in _Bioconductor_, or decline it. The label
+  '2. review in progress' will be replaced by '3a. accepted' or
+  '3b. declined'.
 
 * If your package is accepted, it will be added to _Bioconductor_'s
   Subversion source control repository and to the nightly 'devel'
