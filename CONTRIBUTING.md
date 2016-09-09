@@ -53,7 +53,7 @@ To submit a package to _Bioconductor_:
 
 ## What to Expect
 
-* A new package is iniitally lavelled as '1. awaiting moderation'.
+* A new package is initially labeled as '1. awaiting moderation'.
   A _Bioconductor_ team member will take a very brief look at your
   package, to ensure that it is intended for _Bioconductor_. Appropriate
   packages will be re-labelled '2. review in progress'.
