@@ -13,6 +13,12 @@ Confirm the following by editing each check box to '[x]'
   instructions. My package is consistent with the _Bioconductor_
   [Package Guidelines][1].
 
+- [ ] I understand that a minimum requirement for package acceptance 
+  is to pass R CMD check and R CMD BiocCheck with no ERROR or WARNINGS. 
+  Passing these checks does not result in automatic acceptance. The 
+  package will then undergo a formal review and recommendations for 
+  acceptance regarding other Bioconductor standards will be addressed.
+
 - [ ] My package addresses statistical or bioinformatic issues related
   to the analysis and comprehension of high throughput genomic data.
 
