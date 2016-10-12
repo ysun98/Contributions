@@ -39,7 +39,8 @@ By using this service, please note that:
 To submit a package to _Bioconductor_:
 
 1. Create your own [GitHub repository][2], containing source code
-   structured as an _R_ package.
+   structured as an _R_ package. The source code must be in a 
+   default 'master' branch of your GitHub repository.
 
 2. [Open a new issue][5]. Complete the issue by adding the link to
    your repository, and confirming that you understand the review
@@ -48,8 +49,8 @@ To submit a package to _Bioconductor_:
    of the issue.
 
 3. [Add a webhook][3] to your repository. The webhook means that any
-   commit to the default (typically 'master') branch automatically
-   triggers a new package build.
+   commit to the default 'master' branch automatically triggers a new 
+   package build.
 
 ## What to Expect
 
@@ -136,11 +137,11 @@ To add a web hook:
 
 6. Click `Add webhook`.
 
-Subsequent pushes to the default (usually `master`) branch of your
+Subsequent pushes to the default `master` branch of your
 repository will now trigger builds (only if the package version
 has been bumped), and the build reports will be
 posted to the issue you created in this repository.  Note that pushes
-to non-default branches are ignored.
+to branches that are not `master`, or non-default branches, are ignored.
 
 ## Submitting Related Packages
 
