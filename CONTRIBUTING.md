@@ -66,20 +66,21 @@ To submit a package to _Bioconductor_:
   to ensure that the package conforms to standard _R_ programming best
   practices. Finally, the build system will run `R CMD BiocCheck` to
   ensure that the package conforms to _Bioconductor_ [BiocCheck][4]
-  standards. The system will perform these steps using the ['devel'
-  version](https://bioconductor.org/developers/how-to/useDevel/) of _Bioconductor_,
-  on three platforms (Linux, Mac OS X, and
+  standards. The system will perform these steps using the
+  ['devel' version](https://bioconductor.org/developers/how-to/useDevel/)
+  of _Bioconductor_, on three platforms (Linux, Mac OS X, and
   Windows).  After these steps are complete, a link to a build report
   will be appended to the new package issue. Avoid surprises by
-  running these checks on your own computer, under the 'devel' version of
-  _Bioconductor_, before submitting your package.
+  running these checks on your own computer, under the 'devel' version
+  of _Bioconductor_, before submitting your package.
 
 * If the build report indicates problems, modify your package and
-  commit changes to the default branch of your GitHub
-  repository. Pushing to the default branch will trigger another
-  build report, **if** the pushed commits include a version bump.
-  If there are problems that you do not understand, seek
-  help on the [bioc-devel][9] mailing list.
+  commit changes to the default branch of your GitHub repository.  If
+  there are problems that you do not understand, seek help on the
+  [bioc-devel][9] mailing list.
+
+* To trigger a new build, include a version bump in your commit, e.g.,
+  from `Version: 0.99.0` to `Version: 0.99.1`.
 
 * Once your package builds and checks without errors or (avoidable)
   warnings, a _Bioconductor_ team member will provide a technical
