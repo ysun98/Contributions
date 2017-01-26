@@ -6,6 +6,7 @@
 - [What to Expect](#what-to-expect)
 - [Adding a Web Hook](#adding-a-web-hook)
 - [Submitting Related Packages](#submitting-related-packages)
+- [Additional Actions](#additional-actions)
 - [Resources](#resources)
 
 # Contributing a _Bioconductor_ Package
@@ -175,6 +176,26 @@ vignette. Remember to avoid circular dependencies between pacakges.
 
 5. [Add a webhook][3] for each additional package, so that any changes
    (accompanied by a version bump) trigger a new build.
+
+## Additional Actions
+
+To change the repository of your package during the review process:
+
+1. Edit the first comment in the issue associated with your
+   package. Change the Repository: link to point to your new
+   repository.
+2. [Add a webhook][3] to the new repository (and remove the
+   corresponding web hook from the old repository).
+3. Post a comment in your issue, including @mtmorgan, indicating that
+   you have changed the repository.
+4. Once the comment is acknowledged, bump the package version in the
+   new repository to trigger a new build.
+
+To remove an AdditionalPackage: dependency, e.g., because you have
+identified AnnnotationHub or other resources that make your additional
+package unnecessary:
+
+1. Delete or edit all comments with an `AdditionalPackage:` tag.
 
 ## Resources
 
