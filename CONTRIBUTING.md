@@ -137,7 +137,10 @@ To add a web hook:
 
         http://issues.bioconductor.org
 
-6. Click `Add webhook`.
+6. Confirm that the `Content type` drop-down menu has
+   `application/json` selected.
+
+7. Click `Add webhook`.
 
 Subsequent pushes to the default `master` branch of your
 repository will now trigger builds (only if the package version
@@ -196,6 +199,22 @@ identified AnnnotationHub or other resources that make your additional
 package unnecessary:
 
 1. Delete or edit all comments with an `AdditionalPackage:` tag.
+
+To debug packages commits that don't trigger a response on the
+corresponding issue:
+
+1. Verify that the [web hook][3] is in place.
+
+2. Review 'Recent Deliveries', especially those marked as failures
+   (red triangle with exclamation mark).  Click on the checksum, look
+   at the 'Response' body.
+
+3. If the response body says 'Failed to parse JSON', verify that the
+   web hook (in your repository, 'Settings', 'Webhooks', 'Edit' the
+   web hook you've added) has 'Content type:' equal to
+   `application/json`.
+
+4. After debugging, click the 'Redeliver' button.
 
 ## Resources
 
