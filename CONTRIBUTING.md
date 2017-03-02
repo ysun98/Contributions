@@ -200,7 +200,7 @@ package unnecessary:
 
 1. Delete or edit all comments with an `AdditionalPackage:` tag.
 
-To debug packages commits that don't trigger a response on the
+To debug package commits that don't trigger a response on the
 corresponding issue:
 
 1. Verify that the [web hook][3] is in place.
