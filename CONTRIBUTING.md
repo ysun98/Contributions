@@ -153,7 +153,7 @@ to branches that are not `master`, or non-default branches, are ignored.
 Sometimes it is appropriate to contribute more than one package at a
 time. The most common case is when a software package has a companion
 experiment data package used for illustrative purposes in the
-vignette. Remember to avoid circular dependencies between pacakges.
+vignette. Remember to avoid circular dependencies between packages.
 
 1. Start by submitting the package that can be installed without a
    dependency on any of the other packages you are submitting (this is
