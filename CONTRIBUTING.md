@@ -43,13 +43,17 @@ To submit a package to _Bioconductor_:
    structured as an _R_ package. The source code must be in a 
    default 'master' branch of your GitHub repository.
 
-2. [Open a new issue][5]. Complete the issue by adding the link to
+1. [Add SSH public key(s)][12] to your GitHub account. The SSH key
+   pair will be used after package acceptance for updating the
+   Bioconductor git repository.
+
+1. [Open a new issue][5]. Complete the issue by adding the link to
    your repository, and confirming that you understand the review
    process, package guidelines, and maintainer
    responsibilities. Provide the name of your package as the 'Title'
    of the issue.
 
-3. [Add a webhook][3] to your repository. The webhook means that any
+1. [Add a webhook][3] to your repository. The webhook means that any
    commit to the default 'master' branch automatically triggers a new 
    package build.
 
@@ -239,3 +243,4 @@ If you have a question not answered above, please ask on the
 [9]: https://stat.ethz.ch/mailman/listinfo/bioc-devel
 [10]: http://bioconductor.org/developers/how-to/source-control/
 [11]: http://bioconductor.org/developers/how-to/git-mirrors/
+[12]: https://help.github.com/articles/connecting-to-github-with-ssh/
