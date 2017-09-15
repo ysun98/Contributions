@@ -35,7 +35,7 @@ management, including:
 - [ ] The 'devel' branch for new packages and features.
 - [ ] The stable 'release' branch, made available every six
       months, for bug fixes.
-- [ ] _Bioconductor_ version control using [Subversion][5]
+- [ ] _Bioconductor_ version control using [Git][5]
   (optionally [via GitHub][6]).
 
 For help with submitting your package, please subscribe and post questions
@@ -45,5 +45,5 @@ to the [bioc-devel][4] mailing list.
 [2]: https://bioconductor.org/developers/package-submission/
 [3]: https://support.bioconductor.org
 [4]: https://stat.ethz.ch/mailman/listinfo/bioc-devel
-[5]: http://bioconductor.org/developers/how-to/source-control/
-[6]: http://bioconductor.org/developers/how-to/git-mirrors/
+[5]: http://bioconductor.org/developers/how-to/git/
+[6]: http://bioconductor.org/developers/how-to/git/sync-existing-repositories/
