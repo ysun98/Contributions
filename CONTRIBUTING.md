@@ -146,6 +146,12 @@ To add a web hook:
 
 7. Click `Add webhook`.
 
+8. The page will be updated to include a link to the web hook. Click
+   on the link. A 'Recent Deliveries' area should contain a single
+   request. Click on the Request and view the "Response" tab. There
+   should be a green `200` response code, with body `ping received,
+   Bioconductor/Contributions webhook ok`.
+
 Subsequent pushes to the default `master` branch of your
 repository will now trigger builds (only if the package version
 has been bumped), and the build reports will be
