@@ -132,7 +132,7 @@ To add a web hook:
 2. Click on `Settings`, which is currently located towards the top, on
    the right-hand side of the page.
 
-3. In the left hand `Options` section, click on `Webhooks & services`.
+3. In the left hand `Options` section, click on `Webhooks`.
 
 4. Click on `Add webhook`.
 
