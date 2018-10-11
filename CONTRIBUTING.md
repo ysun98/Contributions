@@ -1,4 +1,3 @@
-
 # Table of Contents
 
 - [Contributing a _Bioconductor_ Package](#contributing-a-bioconductor-package)
@@ -40,7 +39,7 @@ By using this service, please note that:
 To submit a package to _Bioconductor_:
 
 1. Create your own [GitHub repository][2], containing source code
-   structured as an _R_ package. The source code must be in a 
+   structured as an _R_ package. The source code must be in a
    default 'master' branch of your GitHub repository.
 
 1. [Add SSH public key(s)][12] to your GitHub account. The SSH key
@@ -54,7 +53,7 @@ To submit a package to _Bioconductor_:
    of the issue.
 
 1. [Add a webhook][3] to your repository. The webhook means that any
-   commit to the default 'master' branch automatically triggers a new 
+   commit to the default 'master' branch automatically triggers a new
    package build.
 
 ## What to Expect
@@ -125,7 +124,7 @@ To add a web hook:
 1. Go to your repository page on GitHub. The link to it will look
    something like this:
 
-        https://github.com/yourusername/yourpackagename
+	https://github.com/yourusername/yourpackagename
 
    Of course, `yourusername` and `yourpackagename` will be different.
 
@@ -139,7 +138,7 @@ To add a web hook:
 5. Paste the following URL into the `Payload URL` box, leaving the
    other settings alone:
 
-        http://issues.bioconductor.org
+	http://issues.bioconductor.org
 
 6. Confirm that the `Content type` drop-down menu has
    `application/json` selected.
@@ -176,7 +175,7 @@ vignette. Remember to avoid circular dependencies between packages.
 3. Submit additional packages to the same issue. Do this by posting a
    comment containing a line like:
 
-        AdditionalPackage: https://github.com/username/repositoryname
+	AdditionalPackage: https://github.com/username/repositoryname
 
    Include only one `AdditionalPackage` line per comment.  Wait until
    this related package builds before submitting further related
@@ -189,6 +188,41 @@ vignette. Remember to avoid circular dependencies between packages.
 
 5. [Add a webhook][3] for each additional package, so that any changes
    (accompanied by a version bump) trigger a new build.
+
+### Circular Dependencies
+
+If circular dependencies are truly unavoidable, there are some subtle differences
+from the above. Bioconductor will support a 'Suggest / Depend' circular
+dependency. Most often an accompanied data package will "Suggest" the software
+package, while the software package will "Depend" on the data package. The
+single package builder (SPB) handles this case by providing each issue with a
+unique Rlib path for additional package dependencies. The SPB will install each
+package before tryng to build or check.
+
+1. Start by submitting the package with the weaker circular dependency (the
+   package that "Suggests" the other package, most often this will be the data
+   package). Do this by creating a [new issue][5] as described above.
+
+2. This package will `ERROR` when running R CMD build. This is expected since
+   the additional package would not be found yet.
+
+3. Submit the additional packages to the same issue. Do this by posting a
+   comment containing a line like:
+
+	AdditionalPackage: https://github.com/username/repositoryname
+
+4. This package will also `ERROR` when running R CMD build. This is expected.
+
+6. [Add a webhook][3] for each additional package, so that any changes
+   (accompanied by a version bump) trigger a new build.
+
+7. Now, perform a version bump on the first package. It should find the second
+   package and not `ERROR` for a missing dependency. Continue working with this
+   package until it builds and checks without error on any platform.
+
+8. Perform a version bump on the second package. It should now find the first
+   package and not `ERROR` for its missing dependency. Continue with the review
+   process.
 
 ## Additional Actions
 
