@@ -179,7 +179,8 @@ vignette. Remember to avoid circular dependencies between packages.
 
    Include only one `AdditionalPackage` line per comment.  Wait until
    this related package builds before submitting further related
-   packages.
+   packages. Do this only after the first build has posted for original package
+   submitted and the package has been awarded a `review in progress` label.
 
 4. The `AdditionalPackage` comment must be posted by the same GitHub
    user who created the issue. Also, the initial package submitted in
@@ -201,28 +202,28 @@ package before tryng to build or check.
 
 1. Start by submitting the package with the weaker circular dependency (the
    package that "Suggests" the other package, most often this will be the data
-   package). Do this by creating a [new issue][5] as described above.
+   package). Do this by creating a [new issue][5] as described above. We will
+   call this package A.
 
-2. This package will `ERROR` when running R CMD build. This is expected since
-   the additional package would not be found yet.
+2. This package A will `ERROR` when running R CMD build. This is expected since
+   the additional package B would not be found yet.
 
 3. Submit the additional packages to the same issue. Do this by posting a
    comment containing a line like:
 
 	AdditionalPackage: https://github.com/username/repositoryname
 
-4. This package will also `ERROR` when running R CMD build. This is expected.
+4. This package B will also `ERROR` when running R CMD build. This is expected.
 
-6. [Add a webhook][3] for each additional package, so that any changes
+6. [Add a webhook][3] for each package, so that any changes
    (accompanied by a version bump) trigger a new build.
 
-7. Now, perform a version bump on the first package. It should find the second
-   package and not `ERROR` for a missing dependency. Continue working with this
-   package until it builds and checks without error on any platform.
+7. Now, perform a version bump on the package A. It should find package B and
+   not `ERROR` for a missing dependency. Continue working with package A until it
+   builds and checks without error on any platform. 
 
-8. Perform a version bump on the second package. It should now find the first
-   package and not `ERROR` for its missing dependency. Continue with the review
-   process.
+8. Perform a version bump on package B. It should now find package A and not
+   `ERROR` for its missing dependency. Continue with the review process.
 
 ## Additional Actions
 
