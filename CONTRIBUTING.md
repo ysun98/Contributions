@@ -5,6 +5,7 @@
 - [What to Expect](#what-to-expect)
 - [Adding a Web Hook](#adding-a-web-hook)
 - [Submitting Related Packages](#submitting-related-packages)
+  - [Circular Dependencies](#circular-dependencies)
 - [Additional Actions](#additional-actions)
 - [Resources](#resources)
 
