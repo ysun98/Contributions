@@ -4,6 +4,7 @@
 - [Starting the Submission Process](#starting-the-submission-process)
 - [What to Expect](#what-to-expect)
 - [Adding a Web Hook](#adding-a-web-hook)
+  - [R CMD check environment](#r-cmd-check-environment)
 - [Submitting Related Packages](#submitting-related-packages)
   - [Circular Dependencies](#circular-dependencies)
 - [Additional Actions](#additional-actions)
@@ -69,8 +70,10 @@ To submit a package to _Bioconductor_:
   then run `R CMD build` to create a 'tarball' of your source code,
   vignettes, and man pages. It will run `R CMD check` on the tarball,
   to ensure that the package conforms to standard _R_ programming best
-  practices. Finally, the build system will run `R CMD BiocCheck` to
-  ensure that the package conforms to _Bioconductor_ [BiocCheck][4]
+  practices.  _Bioconductor_ has chosen to utilize a custom `R CMD check`
+  environment; See [R CMD check environment][13] for more details. Finally, the
+  build system will run `R CMD BiocCheck` to ensure that the package conforms to
+  _Bioconductor_ [BiocCheck][4]
   standards. The system will perform these steps using the
   ['devel' version](https://bioconductor.org/developers/how-to/useDevel/)
   of _Bioconductor_, on three platforms (Linux, Mac OS X, and
@@ -117,6 +120,24 @@ To submit a package to _Bioconductor_:
   closed. All updates to your package will be through the
   _Bioconductor_ [Git repository][10] (optionally,
   [using GitHub][11]).
+
+## R CMD check environment
+It is possible to activate or deactivate a number of options in `R CMD build`
+and `R CMD check`. Options can be set as individual environment variables or
+they can be [listed in a file](https://cran.r-project.org/doc/manuals/r-release/R-exts.html#Checking-and-building-packages). 
+Descriptions of all the different options available can be found [here](https://cran.r-project.org/doc/manuals/r-devel/R-ints.html#Tools).
+_Bioconductor_ has chosen to customize some of these options for incoming
+submission during `R CMD check`. The file of utilized flags can be downloaded
+from
+[Github](https://github.com/Bioconductor/packagebuilder/blob/master/check.Renviron). The
+file can either be place in a default directory as directed
+[here](https://cran.r-project.org/doc/manuals/r-release/R-exts.html#Checking-and-building-packages)
+or can be set through environment variable `R_CHECK_ENVIRON` with a command
+similar to 
+
+```
+export R_CHECK_ENVIRON = <path to downloaded file>
+```
 
 ## Adding a Web Hook
 
@@ -286,3 +307,4 @@ If you have a question not answered above, please ask on the
 [10]: http://bioconductor.org/developers/how-to/source-control/
 [11]: http://bioconductor.org/developers/how-to/git-mirrors/
 [12]: https://help.github.com/articles/connecting-to-github-with-ssh/
+[13]: #r-cmd-check-environment
